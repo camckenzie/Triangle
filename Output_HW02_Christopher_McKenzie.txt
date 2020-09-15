@@ -1,0 +1,12 @@
+
+camck@DESKTOP-NC149LM MINGW64 ~/Desktop/2020F SSW-567-WS SW Testing, Qual Assur & Maint/Homework/Triangle (master)
+$ C:/Users/camck/AppData/Local/Programs/Python/Python38-32/python.exe "c:/Users/camck/Desktop/2020F SSW-567-WS SW Testing, Qual Assur & Maint/Homework/Triangle/TestTriangle.py"
+Running unit tests
+..............
+----------------------------------------------------------------------
+Ran 14 tests in 0.002s
+
+OK
+
+camck@DESKTOP-NC149LM MINGW64 ~/Desktop/2020F SSW-567-WS SW Testing, Qual Assur & Maint/Homework/Triangle (master)
+$ 
