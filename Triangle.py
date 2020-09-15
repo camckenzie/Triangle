@@ -1,12 +1,42 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jan 14 13:44:00 2016
-Updated Jan 21, 2018
-
-The primary goal of this file is to demonstrate a simple python program to classify triangles
+Description:
+The primary goal of this file is to demonstrate a simple python program
+to classify triangles.
 
 @author: Christopher McKenzie
-@author: rk
+
+Results:
+I correctly fixed the classifyTriangle function and all of the
+predefine tests, along with my additional tests, passed.
+
+Reflection:
+This was the first time I had been given buggy code to fix and at least
+for this assignment, it came easily to me. I already had many different
+ideas of how to break the code from the previous assignments, so I did
+not run into any problems; everything worked. Also, it was my first
+time using bash to run Python code, so I was glad to finally be given
+the opportunity to do so.
+
+Honor Pledge:
+I pledge my honor that I have abided by the Stevens Honor System.
+
+Detailed Results:
+My technique was simply testing the program first to see what errors
+occurred. Then, since the program was small, I added print statements
+by the error statements to see which ones were triggered. From there,
+I read carefully through the program to catch any errors. 
+
+I assumed that the correct number of parameters were always entered,
+and that there could not be an Isosceles Right Triangle or a Scalene
+Triangle.
+
+My test inputs included 2 examples of every type of triangle, and 2
+different examples of how to initiate each error condition specified.
+
+My tests and their results confirmed that I had fixed the buggy
+classifyTriangle program, and that it could accurately classify
+a triangle.
 """
 
 def classifyTriangle(a,b,c):
