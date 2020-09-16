@@ -1,7 +1,6 @@
 #USE 'py -m unittest TestTriangle' INSTEAD OF 'python -m unittest TestTriangle'
 # -*- coding: utf-8 -*-
 """
-Description:
 The primary goal of this file is to demonstrate a simple unittest implementation
 
 @author: Christopher McKenzie
