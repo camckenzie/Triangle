@@ -7,7 +7,7 @@ to classify triangles.
 @author: Christopher McKenzie
 
 Results:
-I correctly fixed the classifyTriangle function and all of the
+I fixed the classifyTriangle function and all of the
 predefine tests, along with my additional tests, passed.
 
 Reflection:
