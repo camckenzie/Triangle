@@ -6,6 +6,8 @@ to classify triangles.
 @author: Christopher McKenzie
 """
 
+import math
+
 def classifyTriangle(a,b,c):
     """
     Your correct code goes here...  Fix the faulty logic below until the code passes all of 
@@ -26,7 +28,7 @@ def classifyTriangle(a,b,c):
 
     # verify that all 3 inputs are integers  
     # Python's "isinstance(object,type) returns True if the object is of the specified type
-    if not(isinstance(a,int) and isinstance(b,int) and isinstance(c,int)):
+    if isinstance(a,str) or isinstance(b,str) or isinstance(c,str):
         return 'InvalidInput'
 
     # require that the input values be >= 0 and <= 200
@@ -42,15 +44,24 @@ def classifyTriangle(a,b,c):
     # of the specified shape is not a triangle
     if (a >= (b + c)) or (b >= (a + c)) or (c >= (a + b)):
         return 'NotATriangle'
-        
+    
+    triangle: str = ""
     # now we know that we have a valid triangle 
     if a == b and b == a and b == c:
-        return 'Equilateral'
-    elif ((a ** 2) + (b ** 2)) == (c ** 2) or \
+        triangle += 'Equilateral'
+    elif (a != b) and (b != c) and (a != b):
+        triangle += 'Scalene'
+    elif (a == b and c == a * math.sqrt(2)) or \
+        (a == c and b == a * math.sqrt(2)) or \
+        (b == c and a == b * math.sqrt(2)):
+        return 'Isosceles Right triangle'
+    else:
+        triangle += 'Isosceles'
+    
+    if ((a ** 2) + (b ** 2)) == (c ** 2) or \
         ((b ** 2) + (c ** 2)) == (a ** 2) or \
         ((c ** 2) + (a ** 2)) == (b ** 2):
-        return 'Right'
-    elif (a != b) and (b != c) and (a != b):
-        return 'Scalene'
-    else:
-        return 'Isosceles'
+        triangle += ' Right'
+
+    triangle += ' triangle'
+    return triangle
