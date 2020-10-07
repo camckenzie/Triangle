@@ -50,9 +50,9 @@ def classify_triangle(side_a, side_b, side_c):
         triangle += 'Isosceles'
 
     #Conditions for Isosceles Right Triangle
-    irt_a: bool = side_a == side_b and side_c == side_a * math.sqrt(2)
-    irt_b: bool = side_a == side_c and side_b == side_a * math.sqrt(2)
-    irt_c: bool = side_b == side_c and side_a == side_b * math.sqrt(2)
+    irt_a = side_a == side_b and side_c == side_a * math.sqrt(2)
+    irt_b = side_a == side_c and side_b == side_a * math.sqrt(2)
+    irt_c = side_b == side_c and side_a == side_b * math.sqrt(2)
 
     if irt_a is True or \
         irt_b is True or \
