@@ -36,11 +36,11 @@ def classify_triangle(side_a, side_b, side_c):
         (side_c >= (side_a + side_b)):
         return 'NotATriangle'
 
-    triangle: str = ""
+    triangle = ""
 
     if side_a == side_b and side_b == side_a and side_b == side_c:
         triangle += 'Equilateral'
-    #elif side_a != side_b and side_b != side_c and side_a != side_b:
+
     elif side_a not in (side_b, side_c) and \
         side_b not in (side_a, side_c) and \
         side_c not in (side_a, side_b):
